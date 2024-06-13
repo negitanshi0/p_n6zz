@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+　<meta charset="utf-8">
+　<title>ログイン</title>
+　<link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <center>
+        <h1>☆</h1>
+    </center>
+</header>
+
+<br>
+<br>
+<br>
+
+<body>
+<center>
+    <!--フォーム-->
+    <div>
+        <form method ="post" action="twoshot.html">
+	<small><p id="null_chk" style="display:none; color:red;">
+	※未記入の箇所があります
+	</p></small>
+        <p id="url_tx">
+	遷移先URL
+        <input type="text" size="24" placeholder="https://" id="url">
+        </p>
+        <p id="time_tx">
+	時間
+        <input type="text" size="4" placeholder="00" id="ehour">
+	：
+	<input type="text" size="4" placeholder="00" id="eminutes">
+        ：
+	<input type="text" size="4" placeholder="00" id="eseconds">
+        ：
+	<input type="text" size="4" placeholder="000" id="emilliseconds">
+        </p>　　　　　　　　
+　　　　<p>
+        <input type="submit" value="実行" id="regist">
+	</p>
+        </form>
+    </div>
+
+
+　　<div style="font-size: 30px;">
+    <!--遷移までの待機画面-->
+        <b id="realtime" style="display:none; color:#bc8f8f;">
+        </b>
+	<p class="geturl_chk" >
+        <u><b id="geturl" style="display:none; color:#696969; font-size:20px;">
+        </b></u>
+	</p>
+	</br>
+        <b id="progresstime" style="display:none; color:#bc8f8f;">
+        </b>
+    </div>
+
+
+
+</center>
+
+	<script src="twoshot.js"></script>
+
+</body>
+</html>
