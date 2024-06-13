@@ -73,7 +73,25 @@ function timer(){
   	 if((end - start) <= 0){ 
 		clearInterval(timerId);
 		location.href = document.getElementById("url").value;
+		//ログインボタンを自動クリックする
+		window.onload = function() {	
+		　　document.getElementById("login-bt").click();
+		};
   	　}
 　　}, 1);
 
 };
+
+//ログインボタンを自動クリックする
+//window.onload = function() {
+//　　document.getElementById("login-bt").click();
+//};
+
+
+//ログイン処理
+//function login(){
+//	var logId =  Hgcll_26@yahoo.co.jp;
+//	var passId = occupy123;
+//	document.getElementById("loginId").innerHTML = logId;
+//	document.getElementById("loginPassword").innerHTML = passId;
+//};
